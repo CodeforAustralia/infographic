@@ -1,4 +1,4 @@
-#DELWP Infographic
+# DELWP Infographic
 
 The Department of Environment, Land, Water and Planning, know as DELWP, is the result of merging to former departments in government. It manages different areas around Victoria, however, the community is still unclear of what the deparment does.
 
