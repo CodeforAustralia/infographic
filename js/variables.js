@@ -29,7 +29,7 @@ var screenSize = "m"; // Small, Medium, and Large
 var birdsW = 1920; var birdsH = 360;
 
 /* initial size for turbines */
-var turbineW = 200; var turbineH = 400;
+var turbineW = 159; var turbineH = 277;
 
 /* Cloud */
 var cloudW = 400; var cloudH = 250;
@@ -208,7 +208,7 @@ var sealW = 435; var sealH = 267; var sealTop = 96.6; var sealLeft = -10;
     //var msg5Top = 76.0;    var msg5Left = 14;
 
     /* dot-5 */
-    var dot5Top = 75.4;    var dot5Left = 16;
+    var dot5Top = 76.4;    var dot5Left = 16;
 
      /* msg-6*/
     //var msg6Top = 74.7;    var msg6Left = 44;

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var $win = $(window);
 
@@ -24,82 +25,7 @@ $(document).ready(function() {
     $('.bg13PH').animate({width: $winWidth, height: ($bg13Height * $WidthPerc)/100}); 
     $('.bg14PH').animate({width: $winWidth,height: ($bg14Height * $WidthPerc)/100}); 
     
-    /* ُEnd of creating Place Holders (PH) */
-     console.log ("-----TopPrec: "+ topPercfunc());
-
-    /* If user scrolls using keyboard, this event handler will fire up to load the bg images */
-    /*
-    $("body").keydown(function(){
-        if(($(window).scrollTop() <=                    $('.bg3PH').position().top) && bg5Flag == 1 && isBottomPage ==1){
-           loadIMG('.bg5PH','img/14bgs/bg5.png','bg5 bg');
-           bg5Flag = 0; 
-        } 
-        if ( ($(window).scrollTop() <= $('.bg4PH').position().top) && bg6Flag == 1 && isBottomPage ==1){
-           loadIMG('.bg6PH','img/14bgs/bg6.png','bg6 bg');
-            bg6Flag = 0;
-        }  
-
-        if ( ($(window).scrollTop() <= $('.bg5PH').position().top) && bg7Flag == 1 && isBottomPage ==1){
-           loadIMG('.bg7PH','img/14bgs/bg7.png','bg7 bg');
-            bg7Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg6PH').position().top) && bg8Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg8PH','img/14bgs/bg8.png','bg8 bg');
-            bg8Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg7PH').position().top) && bg9Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg9PH','img/14bgs/bg9.png','bg9 bg');
-            bg9Flag = 0; 
-        }
-
-
-        if ( ($(window).scrollTop() <= $('.bg8PH').position().top) && bg10Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg10PH','img/14bgs/bg10.png','bg10 bg');
-            bg10Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg9PH').position().top) && bg11Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg11PH','img/14bgs/bg11.png','bg11 bg');
-            bg11Flag = 0;
-        } 
-
-        if ( ($(window).scrollTop() <= $('.bg10PH').position().top) && bg12Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg12PH','img/14bgs/bg12.png','bg12 bg');
-            bg12Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg11PH').position().top) &&bg13Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg13PH','img/14bgs/bg13.png','bg13 bg');
-            bg13Flag = 0;
-        }
-
-        if ( ($(window).scrollTop() <= $('.bg12PH').position().top) && bg14Flag == 1 && isBottomPage ==1){
-            loadIMG('.bg14PH','img/14bgs/bg14.png','bg14 bg');
-            bg14Flag = 0;
-        }    
-        
-// ------------------ All Items -------------------
-//++++++++++++++ Birds key down +++++++++                
-        if(($(window).scrollTop() <=                    $('.bg10PH').position().top) && birdsFlag == 1 && isBottomPage ==1){
-            loadIMG('.birdsPH','img/section-789/gifs/birds.gif','birds item hiddenItem');
-            birdsFlag = 0;
-        }         
-//++++++++++++++ cloud2 key down +++++++++  
-        if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloud2Flag == 1 && isBottomPage ==1){
-            loadIMG('.cloud2PH','img/section-789/Cloud.png','cloud2 item hiddenItem');
-            cloud2Flag = 0;
-        }
-//++++++++++++++ cloud key down +++++++++          
-        if(($(window).scrollTop() <=                    $('.bg9PH').position().top) && cloudFlag == 1 && isBottomPage ==1){
-            loadIMG('.cloudPH','img/section-789/Cloud.png','cloud item hiddenItem');
-            cloudFlag = 0;
-        }         
-        
-        
-    }); // End of $("body").keydown
-*/
+    
 // ++++++++++++++++ dot and massages ++++++++++++++++++++
    $('#msg-1').animate({ 
         left: ( ($winWidth  * dot1Left )/100 + dotsW),
@@ -1144,7 +1070,7 @@ $(window).scroll(function(){
             height:($HeightPerc* birdsH)/100,
 
             left: ($winWidth  *(0) )/100,
-            top:  ($winHeight *(0) )/100
+            top:  ($winHeight *(-0.5) )/100
         },0);            
     }else if (topPerc >1.42){
          $('.birds').hide();
@@ -1175,16 +1101,16 @@ $(window).scroll(function(){
         height:(($HeightPerc* turbineH)/100) *60 /100,
 
         left: ($winWidth  *(18) )/100,
-        top:  ($winHeight *(1.8) )/100
+        top:  ($winHeight *(2.2) )/100
     },0); 
 
 
     $('.turbine2').animate({
-        width: (($WidthPerc * turbineW)/100) *120 /100,
-        height:(($HeightPerc* turbineH)/100) *120 /100,
+        width: (($WidthPerc * turbineW)/100) *100 /100,
+        height:(($HeightPerc* turbineH)/100) *100 /100,
 
         left: ($winWidth  *(27) )/100,
-        top:  ($winHeight *(1.5) )/100
+        top:  ($winHeight *(2) )/100
     },0);
 
     $('.turbine3').animate({
@@ -1192,15 +1118,15 @@ $(window).scroll(function(){
         height:( (($HeightPerc* turbineH)/100 ) *70 /100),
 
         left: ($winWidth  *(40) )/100,
-        top:  ($winHeight *(1.65) )/100
+        top:  ($winHeight *(1.95) )/100
     },0);
 
     $('.turbine4').animate({
-        width: (($WidthPerc * turbineW)/100) *105 /100,
-        height:(($HeightPerc* turbineH)/100) *105 /100,
+        width: (($WidthPerc * turbineW)/100) *95 /100,
+        height:(($HeightPerc* turbineH)/100) *95 /100,
 
         left: ($winWidth  *(50) )/100,
-        top:  ($winHeight *(1.5) )/100
+        top:  ($winHeight *(1.8) )/100
     },0);
 
     $('.turbine5').animate({
@@ -1208,7 +1134,7 @@ $(window).scroll(function(){
         height:(($HeightPerc* turbineH)/100) *75 /100,
 
         left: ($winWidth  *(62) )/100,
-        top:  ($winHeight *(1.3) )/100
+        top:  ($winHeight *(2) )/100
     },0);
 
     $('.turbine6').animate({
@@ -1216,7 +1142,7 @@ $(window).scroll(function(){
         height:(($HeightPerc* turbineH)/100) *95 /100,
 
         left: ($winWidth  *(73) )/100,
-        top:  ($winHeight *(1.6) )/100
+        top:  ($winHeight *(2.2) )/100
     },0);  
        
  // +++++++++++++++ cloud2 ++++++++++++++++++++++++
@@ -1671,89 +1597,125 @@ $(window).scroll(function(){
 
     if (topPerc <= 0.2){
         $('.kangaroo').hide();
+    }else if (topPerc > 1 && topPerc <= 2 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(60) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
+    }else if (topPerc > 2 && topPerc <= 3 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(56) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
+    }else if (topPerc > 3 && topPerc <= 4 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(50) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
     }else if (topPerc > 4 && topPerc <= 5 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(82) )/100,
+            left: ($winWidth  *(46) )/100,
             top:  ($winHeight *(13.9) )/100
         },0); 
-    }else if (topPerc >5 && topPerc <= 6 ){
+    }else if (topPerc > 5 && topPerc <= 6 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(75) )/100,
+            left: ($winWidth  *(42) )/100,
+            top:  ($winHeight *(13.9) )/100
+        },0); 
+    }else if (topPerc > 6 && topPerc <= 7 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($WidthPerc * kangarooH)/100,
+
+            left: ($winWidth  *(38) )/100,
             top:  ($winHeight *(14) )/100
         },0); 
-    }else if (topPerc >6 && topPerc <=7){
+    }else if (topPerc > 7 && topPerc <= 8 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($WidthPerc * kangarooH)/100,
 
-            left: ($winWidth  *(70) )/100,
+            left: ($winWidth  *(34) )/100,
             top:  ($winHeight *(14.1) )/100
         },0); 
-    }else if (topPerc >7 && topPerc <=8){
+    }else if (topPerc > 8 && topPerc <= 9 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(63) )/100,
+            left: ($winWidth  *(30) )/100,
             top:  ($winHeight *(14.3) )/100
         },0); 
-    }else if (topPerc >8 && topPerc <=9 ){
+    }else if (topPerc > 9 && topPerc <= 10 ){
          $('.kangaroo').show();
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(54) )/100,
+            left: ($winWidth  *(26) )/100,
             top:  ($winHeight *(14.2) )/100
-        },0); 
-    }else if (topPerc >9 && topPerc <=10 ){
-         $('.kangaroo').animate({
-            width: ($WidthPerc * kangarooW)/100,
-            height:($HeightPerc* kangarooH)/100,
-
-            left: ($winWidth  *(47) )/100,
-            top:  ($winHeight *(14.3) )/100
         },0); 
     }else if (topPerc >10 && topPerc <=11 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(42) )/100,
-            top:  ($winHeight *(14.5) )/100
+            left: ($winWidth  *(22) )/100,
+            top:  ($winHeight *(14.3) )/100
         },0); 
     }else if (topPerc >11 && topPerc <=12 ){
          $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(35) )/100,
-            top:  ($winHeight *(14.4) )/100
-        },0); 
-    }else if (topPerc >12 && topPerc <=13 ){
-        $('.kangaroo').show();
-        $('.kangaroo').animate({
-            width: ($WidthPerc * kangarooW)/100,
-            height:($HeightPerc* kangarooH)/100,
-
-            left: ($winWidth  *(27) )/100,
+            left: ($winWidth  *(18) )/100,
             top:  ($winHeight *(14.5) )/100
         },0); 
-    }else if (topPerc >13 && topPerc <= 14 ){
+    }else if (topPerc >12 && topPerc <=13 ){
+         $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(14) )/100,
+            top:  ($winHeight *(14.4) )/100
+        },0); 
+    }else if (topPerc >13 && topPerc <=14 ){
         $('.kangaroo').show();
         $('.kangaroo').animate({
             width: ($WidthPerc * kangarooW)/100,
             height:($HeightPerc* kangarooH)/100,
 
-            left: ($winWidth  *(20) )/100,
+            left: ($winWidth  *(10) )/100,
+            top:  ($winHeight *(14.5) )/100
+        },0); 
+    }else if (topPerc >14 && topPerc <= 15 ){
+        $('.kangaroo').show();
+        $('.kangaroo').animate({
+            width: ($WidthPerc * kangarooW)/100,
+            height:($HeightPerc* kangarooH)/100,
+
+            left: ($winWidth  *(6) )/100,
             top:  ($winHeight *(14.6) )/100
         },0); 
     }else if (topPerc >20){
@@ -4146,7 +4108,8 @@ width: ($WidthPerc * tramW)/100,
     // console.log("++isBottomPage: "+ isBottomPage);
     // console.log ("@@@@ screen size: " + screenSize );
     //console.log ("kkkk: "+ (0.0095 * ( WidthPerc() * ($bg1Height+$bg2Height +$bg3Height +$bg4Height ) ) ) );
-    // console.log ("-----TopPrec: "+ topPercfunc());
+     console.log ("-----TopPrec: "+ topPercfunc());
 
 
 });
+
